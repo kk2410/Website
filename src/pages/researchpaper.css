@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.rp-header {
+  background-color: #002147; /* Keep the same background */
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 97%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+
+  
+
+  /* Even Lighter Transparent Hexagonal Grid */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-size: 50px 43px; /* Adjust the size of the hexagons */
+  background-repeat: repeat;
+}
+
+
+.h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white; /* Light Gray */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.rp-logo {
+  height: 60px;
+}
+
+/* --- Main Layout --- */
+.container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+
+/* --- Content --- */
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.paper-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 900px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* --- Paper Items --- */
+.paper-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.paper-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Paper Links --- */
+.paper-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #002147;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.paper-link:hover {
+  color: #248BD6;
+}
+
+/* --- Paper Icon --- */
+.paper-icon {
+  width: 40px;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.paper-item:hover .paper-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+/* --- Footer --- */
+.rp-footer {
+  background-color: #002147; /* Same background color as header */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 97%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+
+  /* Hexagonal Grid Background */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-size: 50px 43px;
+  background-repeat: repeat;
+}
+
+.rp-p {
+  color:white;
+}
+
+
+/* --- Updated Paper Items --- */
+.urp-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px;
+}
+
+.urp-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Partition Line --- */
+.partition {
+  width: 100%;
+  height: 2px;
+  background-color: #002147;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* --- Paper Links (Heading) --- */
+.urp-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Removes underline */
+  color: #002147;
+  font-weight: 700; /* Bolder text */
+  font-size: 1.3em; /* Increased font size */
+  transition: color 0.3s ease-in-out;
+}
+
+.urp-link:hover {
+  color: #248BD6;
+}
+
+/* --- Paper Icon (Larger & Centered in Partition) --- */
+.urp-icon {
+  width: 50px; /* Increased icon size */
+  height: 30px;
+  position: absolute;
+  left: 10px; /* Moves it to the left side */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* --- Paper Description --- */
+/* --- Paper Description (Moved Slightly to the Right) --- */
+.urp-description {
+  font-size: 1em;
+  font-weight: 200;
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 30px; /* Moves description slightly to the right */
+}
+
+
+
+.br-contact {
+  border-radius: 15px;
+  width: 97%;
+  margin: 20px auto;
+  background-color: #002147;
+  color: #ffffff;
+  padding: 30px 10px;
+  text-align: center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 50px 43px;
+  background-repeat: repeat;
+}
+
+.br-contact h2 {
+  font-size: 30px;
+  color: #ffdc5f;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.br-contact h2:hover {
+  transform: scale(1.05);
+}
+
+.br-contact h3,
+.br-contact h4 {
+  font-size: 20px;
+  color: #f5c400;
+  margin-bottom: 5px;
+}
+
+.br-contact p {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-info, .contact-map {
+  flex: 1 1 300px;
+  padding: 10px;
+}
+
+.contact-map iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+}

@@ -1,0 +1,213 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f9;
+    color: #333;
+  }
+  
+  .learn-more-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hp-header {
+    background-color: #002147; /* Keep the same background */
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 97%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+  
+    
+  
+    /* Even Lighter Transparent Hexagonal Grid */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+  
+    background-size: 50px 43px; /* Adjust the size of the hexagons */
+    background-repeat: repeat;
+  }
+
+  .hp-logo {
+    height: 60px;
+  }
+
+  
+  main {
+    flex: 1;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h1, h2 {
+    font-weight: 700;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #0b1e3d;
+    font-size:xx-large;
+  }
+  
+  p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .highlight-section,
+  .info-block,
+  .info-block.alt {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  
+  .info-block.alt {
+    background: #ffffff;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+  }
+  
+  .split-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  
+  
+  .split-p{
+    font-weight: bold;
+  }
+  
+  .split-text {
+    flex: 1 1 50%;
+  }
+  
+  .split-image {
+    flex: 1 1 40%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .split-image img {
+    width: 99%;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid black; /* Black border added */
+   
+  }
+  
+  
+  
+  
+  .features-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.75rem;      /* Reduced vertical spacing between rows */
+    margin-top: 1rem;
+    justify-items: center;
+  }
+  
+  
+  
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #cfd8dc;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 220px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: bold;
+  
+    /* 3D effect */
+    box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.1),
+      0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 6px 12px rgba(0, 0, 0, 0.15),
+      0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  .comparison-table th {
+    background: #0b1e3d;
+    color: white;
+  }
+  
+  .hp-footer {
+    background-color: #002147; /* Same background color as header */
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 97%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+  
+    /* Hexagonal Grid Background */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+  
+    background-size: 50px 43px;
+    background-repeat: repeat;
+  }

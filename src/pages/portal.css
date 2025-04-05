@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.por-container {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Header */
+
+.pp-header {
+  background-color: #002147; /* Keep the same background */
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 97%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+
+  
+
+  /* Even Lighter Transparent Hexagonal Grid */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-size: 50px 43px; /* Adjust the size of the hexagons */
+  background-repeat: repeat;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.pp-logo {
+    height: 60px;
+  }
+
+
+/* Service Section */
+.services {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  
+}
+
+
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  border-top: 5px solid #ffcc00;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.service-card a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #002147;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 24px;
+}
+
+.contact .btn {
+  background-color: #ffcc00;
+  color: #002147;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.contact .btn:hover {
+  background-color: #ffd700;
+}
+
+/* Footer */
+
+.pp-footer {
+  background-color: #002147; /* Same background color as header */
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 97%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+
+  /* Hexagonal Grid Background */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-size: 50px 43px;
+  background-repeat: repeat;
+}
+
+.pp-p {
+  color:white;
+}
+
+.footer .contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures exactly 3 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+
+.pr-contact {
+  border-radius: 15px;
+  width: 97%;
+  margin: 20px auto;
+  background-color: #002147;
+  color: #ffffff;
+  padding: 30px 10px;
+  text-align: center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='100' height='87' viewBox='0 0 100 87' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='white' stroke-width='1' stroke-opacity='0.1'%3E%3Cpath d='M25 0 L75 0 L100 43.5 L75 87 L25 87 L0 43.5 Z'/%3E%3Cpath d='M75 0 L125 0 L150 43.5 L125 87 L75 87 L50 43.5 Z'/%3E%3Cpath d='M25 87 L75 87 L100 130.5 L75 174 L25 174 L0 130.5 Z'/%3E%3Cpath d='M75 87 L125 87 L150 130.5 L125 174 L75 174 L50 130.5 Z'/%3E%3Ccircle cx='50' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='43.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='50' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3Ccircle cx='100' cy='130.5' r='2' fill='white' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 50px 43px;
+  background-repeat: repeat;
+}
+
+.pr-contact h2 {
+  font-size: 30px;
+  color: #ffdc5f;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pr-contact h2:hover {
+  transform: scale(1.05);
+}
+
+.pr-contact h3,
+.pr-contact h4 {
+  font-size: 20px;
+  color: #f5c400;
+  margin-bottom: 5px;
+}
+
+.pr-contact p {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-info, .contact-map {
+  flex: 1 1 300px;
+  padding: 10px;
+}
+
+.contact-map iframe {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+}
